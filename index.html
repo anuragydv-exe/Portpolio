@@ -1,26 +1,350 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Anurag Yadav's portfolio - B.Tech CSE student, aspiring software engineer and web developer.">
+  <meta name="theme-color" content="#0b1120">
+
+  <title>Anurag Yadav | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
-<body alink="black" vlink="blue" link="red">
-    <h1 align="center">Portfolio</h1>
-    <hr>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">Anurag<span>.</span></a>
 
-    <p align="left" border="10" bordercolor="black"><img src="anurag.png" alt="Anurag Photo" width="100" style="border: 2px solid black"></p>
+    <button class="menu-toggle"
+      id="menu-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<p align="left">Hello, my name is <strong>Anurag Yadav</strong>. <br>I am a passionate web developer with a keen interest in creating dynamic and user-friendly websites. I have experience in <strong>HTML, C, Python</strong>. My goal is to build innovative web applications that provide seamless user experiences.</p>
-<a href="education.html" target="_blank">Click here to know about my education</a><br>
-<br>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Contact Me ↗</a>
+    </nav>
+  </header>
 
-    This is my LinkedIn:<a href="https://www.linkedin.com/in/anurag-yadav-7010a6264/" target="_blank">LinkedIn</a><br>
-    This is my Instagram:<a href="https://www.instagram.com/anuragydv.exe/" target="_blank">Instagram</a><br>
-    This is my Google:<a href="https://www.google.com" target="_blank">Google</a>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          B.TECH CSE STUDENT
+        </p>
 
+        <h1>Hi, I'm <span>Anurag Yadav.</span></h1>
+
+        <h2>I build for the <span id="typing-text">web.</span><span class="cursor">|</span></h2>
+
+        <p class="hero-description">
+          An aspiring software engineer passionate about web development,
+          programming, and building useful digital experiences.
+          Currently learning, creating, and growing every day.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work ↗</a>
+          <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/anurag-yadav-7010a6264/"
+             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+          <a href="https://www.instagram.com/anuragydv.exe/"
+             target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+
+          <a href="https://github.com/"
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="profile-glow"></div>
+
+        <div class="profile-card">
+          <div class="profile-top">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span class="profile-label">developer.png</span>
+          </div>
+
+          <img src="anurag.png" alt="Portrait of Anurag Yadav"
+               class="profile-image">
+
+          <div class="profile-caption">
+            <div>
+              <h3>Anurag Yadav</h3>
+              <p>Student · Developer in progress</p>
+            </div>
+            <span class="code-icon">&lt;/&gt;</span>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-one">{" "} HTML · CSS</div>
+        <div class="floating-badge badge-two">Python · C</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+        <p>A little about my journey in technology.</p>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <span class="card-icon">⌘</span>
+          <h3>Who I Am</h3>
+          <p>
+            I'm a B.Tech Computer Science and Engineering student
+            interested in software development, problem-solving,
+            and modern web technologies.
+          </p>
+        </article>
+
+        <article class="about-card reveal">
+          <span class="card-icon">⚡</span>
+          <h3>What I Do</h3>
+          <p>
+            I practice programming, develop web pages, explore
+            new technologies, and turn ideas into projects as
+            I build my technical skills.
+          </p>
+        </article>
+
+        <article class="about-card reveal">
+          <span class="card-icon">🎯</span>
+          <h3>My Goal</h3>
+          <p>
+            To become a skilled software engineer, contribute
+            to open-source projects, and create applications
+            that solve real-world problems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY TOOLKIT</p>
+        <h2>Skills & <span>Technologies</span></h2>
+        <p>Technologies I'm learning and practicing.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-symbol html-symbol">5</span>
+          <h3>HTML</h3>
+          <p>Web structure</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-symbol css-symbol">#</span>
+          <h3>CSS</h3>
+          <p>Web styling</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-symbol js-symbol">JS</span>
+          <h3>JavaScript</h3>
+          <p>Currently learning</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-symbol c-symbol">C</span>
+          <h3>C Programming</h3>
+          <p>Programming basics</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-symbol python-symbol">Py</span>
+          <h3>Python</h3>
+          <p>Programming basics</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-symbol git-symbol">⌘</span>
+          <h3>Git & GitHub</h3>
+          <p>Version control</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I'M BUILDING</p>
+        <h2>Featured <span>Projects</span></h2>
+        <p>A space for my coding experiments and projects.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-art art-one">
+            <span class="art-symbol">&lt;/&gt;</span>
+            <span class="art-caption">01 / WEB DEVELOPMENT</span>
+          </div>
+
+          <div class="project-info">
+            <p class="project-type">PERSONAL PROJECT</p>
+            <h3>Developer Portfolio</h3>
+            <p>
+              A responsive personal website showcasing my background,
+              technical skills, projects, and ways to connect.
+            </p>
+
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a href="#home" class="project-link">View Portfolio ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-two">
+            <span class="art-symbol">✓</span>
+            <span class="art-caption">02 / PRODUCTIVITY</span>
+          </div>
+
+          <div class="project-info">
+            <p class="project-type">PROJECT IDEA</p>
+            <h3>To-Do List App</h3>
+            <p>
+              A planned task-management app for adding tasks,
+              tracking progress, and organizing daily activities.
+            </p>
+
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <span class="project-link upcoming">In progress / planned</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-three">
+            <span class="art-symbol">⌘</span>
+            <span class="art-caption">03 / PROGRAMMING</span>
+          </div>
+
+          <div class="project-info">
+            <p class="project-type">LEARNING PROJECT</p>
+            <h3>C & Python Programs</h3>
+            <p>
+              A collection of programming exercises focused on
+              logic building, algorithms, and problem-solving.
+            </p>
+
+            <div class="tag-list">
+              <span>C</span>
+              <span>Python</span>
+              <span>Algorithms</span>
+            </div>
+
+            <a href="https://github.com/" target="_blank"
+               rel="noopener noreferrer" class="project-link">
+              Explore GitHub ↗
+            </a>
+          </div>
+        </article>
+      </div>
+      <p class="projects-note">
+        Replace the sample project descriptions and links with your
+        actual work as you complete each project.
+      </p>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY ACADEMIC JOURNEY</p>
+        <h2><span>Education</span></h2>
+      </div>
+
+      <div class="education-card reveal">
+        <div class="education-icon">🎓</div>
+        <div>
+          <p class="project-type">CURRENTLY PURSUING</p>
+          <h3>Bachelor of Technology (B.Tech)</h3>
+          <p class="education-stream">
+            Computer Science & Engineering
+          </p>
+          <p class="education-school">United University</p>
+          <p class="education-note">
+            Learning programming, computer science fundamentals,
+            and software development.
+          </p>
+          <a href="education.html" class="project-link">
+            More About My Education ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">HAVE AN IDEA?</p>
+        <h2>Let's build something <span>great.</span></h2>
+        <p>
+          I'm interested in learning, collaborating on projects,
+          and connecting with people in technology.
+        </p>
+
+        <div class="contact-buttons">
+          <a class="btn btn-primary"
+             href="https://www.linkedin.com/in/anurag-yadav-7010a6264/"
+             target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn ↗
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://github.com/" target="_blank"
+             rel="noopener noreferrer">
+            Find Me on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">Anurag<span>.</span></a>
+    <p>Designed & built by Anurag Yadav.</p>
+    <p>© <span id="year"></span> All rights reserved.</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top"
+          aria-label="Back to top">↑</button>
 </body>
 </html>
